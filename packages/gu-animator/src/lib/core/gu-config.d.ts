@@ -1,3 +1,3 @@
 export interface GuConfig {
-    container?: HTMLElement;
+  container?: HTMLElement;
 }

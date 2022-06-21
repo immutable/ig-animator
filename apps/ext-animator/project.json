@@ -6,9 +6,7 @@
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:browser",
-      "outputs": [
-        "{options.outputPath}"
-      ],
+      "outputs": ["{options.outputPath}"],
       "options": {
         "outputPath": "dist/apps/ext-animator",
         "index": "apps/ext-animator/src/index.html",
@@ -21,9 +19,7 @@
           "apps/ext-animator/src/assets",
           "apps/ext-animator/src/manifest.json"
         ],
-        "styles": [
-          "apps/ext-animator/src/styles.scss"
-        ],
+        "styles": ["apps/ext-animator/src/styles.scss"],
         "scripts": []
       },
       "configurations": {
@@ -80,17 +76,12 @@
     "lint": {
       "executor": "@nrwl/linter:eslint",
       "options": {
-        "lintFilePatterns": [
-          "apps/ext-animator/**/*.ts",
-          "apps/ext-animator/**/*.html"
-        ]
+        "lintFilePatterns": ["apps/ext-animator/**/*.ts", "apps/ext-animator/**/*.html"]
       }
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": [
-        "coverage/apps/ext-animator"
-      ],
+      "outputs": ["coverage/apps/ext-animator"],
       "options": {
         "jestConfig": "apps/ext-animator/jest.config.ts",
         "passWithNoTests": true

@@ -1,20 +1,20 @@
 {
-  "name":"@immutable/gu-animator",
-  "version":"0.0.5",
-  "description":"Gods Unchained animation system",
-  "license":"UNLICENSED",
-  "author":"immutable",
-  "url":"https://www.immutable.com/",
-  "homepage":"https://github.com/immutable/gu-animator",
-  "bugs":{
-    "url":"https://github.com/immutable/gu-animator/issues"
+  "name": "@immutable/gu-animator",
+  "version": "0.0.5",
+  "description": "Gods Unchained animation system",
+  "license": "UNLICENSED",
+  "author": "immutable",
+  "url": "https://www.immutable.com/",
+  "homepage": "https://github.com/immutable/gu-animator",
+  "bugs": {
+    "url": "https://github.com/immutable/gu-animator/issues"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
   },
-  "repository":{
-    "type":"git",
-    "url":"https://github.com/immutable/gu-animator.git",
-    "directory":"packages/gu-animator"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/immutable/gu-animator.git",
+    "directory": "packages/gu-animator"
   }
 }

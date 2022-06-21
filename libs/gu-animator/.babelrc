@@ -1,7 +1,12 @@
 {
-  "presets": [["@nrwl/web/babel", {
-    "useBuiltIns": "usage",
-    "corejs": 3,
-    "targets": "ie >= 8"
-  }]]
+  "presets": [
+    [
+      "@nrwl/web/babel",
+      {
+        "useBuiltIns": "usage",
+        "corejs": 3,
+        "targets": "ie >= 8"
+      }
+    ]
+  ]
 }

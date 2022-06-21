@@ -1,7 +1,5 @@
 import { GuConfig } from '../core/gu-config';
-import {
-  Application, Loader, Text, Ticker, Sprite, Container, BLEND_MODES, IApplicationOptions
-} from 'pixi.js';
+import { Application, Loader, Text, Ticker, Sprite, Container, BLEND_MODES, IApplicationOptions } from 'pixi.js';
 import { gsap, Sine } from 'gsap';
 import { AnimatedGIFLoader } from '@pixi/gif';
 import Lottie from 'lottie-web';
@@ -18,7 +16,6 @@ PIXI.Loader.registerPlugin(AnimatedGIFLoader);
  * Takes a set of animations and manages the playback.
  */
 export class GuController {
-
   private applications: any = {};
   private animations: any[] = [];
   private container!: HTMLElement;
@@ -43,16 +40,16 @@ export class GuController {
       pixi: this.initPixi({
         width: SIZEW,
         height: SIZEH,
-        backgroundColor: 0xFF00FF, // pink
+        backgroundColor: 0xff00ff, // pink
         // backgroundAlpha: 0.5,
         sharedTicker: true,
         sharedLoader: true,
         antialias: false,
         clearBeforeRender: true,
-        resolution: 1
+        resolution: 1,
       }),
-      lottie: this.initLottie()
-    }
+      lottie: this.initLottie(),
+    };
   }
 
   private initPixi(options: IApplicationOptions) {
@@ -118,23 +115,23 @@ export class GuController {
       paused: true,
       ease: Sine.easeOut,
       onUpdateParams: [animation],
-      onUpdate: function(targetAnimation) {
-        const totalDuration = animation.totalFrames/animation.frameRate*1000;
+      onUpdate: function (targetAnimation) {
+        const totalDuration = (animation.totalFrames / animation.frameRate) * 1000;
         const nextMoment = Math.floor(totalDuration * this.progress());
         targetAnimation.goToAndStop(nextMoment); // in milliseconds
         // checkFrame(this, anim, nextMoment);
-      }
+      },
     });
 
     // TODO: Move this debug stuff below into browser extension
     // GSAP timeline tool
-    GSDevTools.create({animation: this.rootTimeline});
+    GSDevTools.create({ animation: this.rootTimeline });
     const css = '.gs-dev-tools {z-index: 999;}';
     const head = document.head || document.getElementsByTagName('head')[0];
     const style: any = document.createElement('style');
     head.appendChild(style);
     style.type = 'text/css';
-    if (style.styleSheet){
+    if (style.styleSheet) {
       // This is required for IE8 and below.
       style.styleSheet.cssText = css;
     } else {

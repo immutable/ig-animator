@@ -6,9 +6,7 @@
   "targets": {
     "build": {
       "executor": "@nrwl/web:webpack",
-      "outputs": [
-        "{options.outputPath}"
-      ],
+      "outputs": ["{options.outputPath}"],
       "defaultConfiguration": "production",
       "options": {
         "outputPath": "dist/apps/examples",
@@ -18,13 +16,8 @@
         "main": "apps/examples/src/main.ts",
         "polyfills": "apps/examples/src/polyfills.ts",
         "tsConfig": "apps/examples/tsconfig.app.json",
-        "assets": [
-          "apps/examples/src/favicon.ico",
-          "apps/examples/src/assets"
-        ],
-        "styles": [
-          "apps/examples/src/styles.scss"
-        ],
+        "assets": ["apps/examples/src/favicon.ico", "apps/examples/src/assets"],
+        "styles": ["apps/examples/src/styles.scss"],
         "scripts": []
       },
       "configurations": {
@@ -58,20 +51,14 @@
     },
     "lint": {
       "executor": "@nrwl/linter:eslint",
-      "outputs": [
-        "{options.outputFile}"
-      ],
+      "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": [
-          "apps/examples/**/*.ts"
-        ]
+        "lintFilePatterns": ["apps/examples/**/*.ts"]
       }
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": [
-        "coverage/apps/examples"
-      ],
+      "outputs": ["coverage/apps/examples"],
       "options": {
         "jestConfig": "apps/examples/jest.config.ts",
         "passWithNoTests": true
