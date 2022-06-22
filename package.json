@@ -57,7 +57,7 @@
     "@typescript-eslint/parser": "5.24.0",
     "@babel/plugin-proposal-decorators": "^7.18.2",
     "babel-jest": "28.1.1",
-    "cypress": "^10.1.0",
+    "cypress": "^10.2.0",
     "eslint": "8.17.0",
     "eslint-config-prettier": "8.5.0",
     "eslint-plugin-cypress": "^2.10.3",
