@@ -37,7 +37,7 @@
     "zone.js": "~0.11.4"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "14.0.2",
+    "@angular-devkit/build-angular": "14.2.11",
     "@angular-eslint/eslint-plugin": "13.5.0",
     "@angular-eslint/eslint-plugin-template": "13.5.0",
     "@angular-eslint/template-parser": "13.5.0",
@@ -51,7 +51,7 @@
     "@nrwl/jest": "14.3.1",
     "@nrwl/js": "^14.3.1",
     "@nrwl/linter": "14.3.1",
-    "@nrwl/web": "^14.4.2",
+    "@nrwl/web": "^14.8.8",
     "@nrwl/workspace": "14.3.1",
     "@rollup/plugin-auto-install": "^2.2.0",
     "@rollup/plugin-node-resolve": "^13.3.0",
